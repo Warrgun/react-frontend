@@ -1,5 +1,7 @@
 import Card from "./Card"
+import List from "./ListFruits.jsx"
 import profilePic from "./assets/profile.jpg"
+
 
 function App() {
     return(
@@ -8,6 +10,7 @@ function App() {
         <Card/>
         <Card/>
         <Card/>
+        <List />
       </>
     );
 }

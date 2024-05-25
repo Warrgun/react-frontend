@@ -1,6 +1,7 @@
 import Card from "./Card"
 import List from "./ListFruits.jsx"
 import profilePic from "./assets/profile.jpg"
+import SlidingCards from "./SlidingCards.jsx";
 
 
 function App() {
@@ -11,14 +12,18 @@ function App() {
     {id: 3, name: "Pomarańcza", prize: 2.05},
     {id: 4, name: "Pomidor", prize: 1.50}
     ];
+
+    const cards = [
+      {id:1, comp: <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>},
+      {id:2, comp: <Card/>},
+      {id:3, comp: <Card/>},
+      {id:4, comp: <Card/>}
+    ]
   
     
     return(
       <>
-        <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <SlidingCards items={cards}/>
         {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       </>
     );

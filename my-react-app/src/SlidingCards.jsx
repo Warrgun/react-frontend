@@ -30,7 +30,7 @@ function SlidingCards({
                 <button onClick={swipeLeft}>swipe left</button>
                 <button onClick={swipeRight}>swipe right</button>
                 <div>
-                    {currentItem.id}
+                    {currentItem.comp}
                 </div>
             </div>
     );

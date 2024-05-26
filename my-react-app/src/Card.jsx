@@ -1,4 +1,3 @@
-import Button from "./button/Button.jsx"
 import PropTypes from "prop-types"
 
 function Card({
@@ -13,7 +12,6 @@ function Card({
             <img className="card-img" src={picture} alt="Profile picture"></img>
             <h2 className="card-title">{name}, {age}</h2>
             <p className="card-p">{isSingle ? "Wolny":"Zajęty"}</p>
-            <Button/>
         </div>
     );
 }

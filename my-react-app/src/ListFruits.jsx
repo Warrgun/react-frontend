@@ -23,7 +23,7 @@ function List({
         margin: "0"
     }
     
-    //fruits.sort((a, b) => a.name.localeCompare(b.name)); alfabetucznie
+    //fruits.sort((a, b) => a.name.localeCompare(b.name)); alfabetycznie
     //fruits.sort((a, b) => a.prize - b.prize); numerycznie
 
     const listItems = items.map( item => <li key = {item.id}>

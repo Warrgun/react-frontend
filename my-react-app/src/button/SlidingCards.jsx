@@ -28,14 +28,25 @@ function SlidingCards({
     const currentItem = items.find( item => item.id === id);
 
     return(
-            <div className={Styles.container}>
-                <div>
+            <div className={Styles.divContainer}>
+                <div className={Styles.buttonContainer}>
+                    <div onClick={swipeLeft} className={`${Styles.arrow} ${Styles.arrowLeft}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div className={Styles.compContainer}>
                     {currentItem.comp}
                 </div>
                 <div className={Styles.buttonContainer}>
-                    <button onClick={swipeLeft} className={Styles.buttonLeft}>swipe left</button>
-                    <button onClick={swipeRight} className={Styles.buttonRight}>swipe right</button>
+                <div onClick={swipeRight} className={`${Styles.arrow} ${Styles.arrowRight}`}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
+                
             </div>
     );
 }

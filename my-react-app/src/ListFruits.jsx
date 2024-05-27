@@ -31,11 +31,13 @@ function List({
                                                     <b>{item.prize}</b></li>);
                                                     
     return(
-        <>
-            <h1 className="category" style={categoryStyle}>{category}</h1>
-            <ol className="items-list" style={listStyle}>
-                {listItems}
-            </ol>
+        <>  
+            <div>
+                <h1 className="category" style={categoryStyle}>{category}</h1>
+                <ol className="items-list" style={listStyle}>
+                    {listItems}
+                </ol>
+            </div>
         </>
         
     );

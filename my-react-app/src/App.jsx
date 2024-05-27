@@ -16,12 +16,11 @@ function App() {
     ];
 
     const cards = [
-      {id:1, comp: <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>},
-      {id:2, comp: <Card/>},
-      {id:3, comp: fruits.length > 0 && <List items={fruits} category="Fruits"/>},
+      {id:1, comp: <ColorPicker/>},
+      {id:2, comp: <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>},
+      {id:3, comp: <CarList/>},
       {id:4, comp: <Form/>},
-      {id:5, comp: <ColorPicker/>},
-      {id:6, comp: <CarList/>}
+      {id:5, comp: fruits.length > 0 && <List items={fruits} category="Fruits"/>}
     ]
   
     

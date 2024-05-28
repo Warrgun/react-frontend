@@ -5,6 +5,7 @@ import SlidingCards from "./button/SlidingCards.jsx";
 import Form from "./Form.jsx"
 import ColorPicker from "./ColorPicker.jsx";
 import CarList from "./CarList.jsx";
+import StopWatch from "./StopWatch/StopWatch.jsx";
 
 function App() {
 
@@ -17,10 +18,11 @@ function App() {
 
     const cards = [
       {id:1, comp: <ColorPicker/>},
-      {id:2, comp: <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>},
-      {id:3, comp: <CarList/>},
-      {id:4, comp: <Form/>},
-      {id:5, comp: fruits.length > 0 && <List items={fruits} category="Fruits"/>}
+      {id:2, comp: <StopWatch/>},
+      {id:3, comp: <Card picture = {profilePic} name="Fabio" age ={20} isSingle = {true}/>},
+      {id:4, comp: <CarList/>},
+      {id:5, comp: <Form/>},
+      {id:6, comp: fruits.length > 0 && <List items={fruits} category="Fruits"/>}
     ]
   
     

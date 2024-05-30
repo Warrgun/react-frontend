@@ -19,7 +19,7 @@ const Carlist = () =>{
 
 
     return(
-        <div>
+        <div className="list-container">
             <h1>List of cars</h1>
             <ul>
                 {cars.map((elemnt, index) => <li key={index} style={{cursor:"pointer"}} onClick={() =>removeCar(index)}>{elemnt.year} {elemnt.make} {elemnt.model}</li>)}

@@ -11,7 +11,8 @@ const MyForm = () =>{
     let handleChange = (e, set)=> set(prev => e.target.value);
 
     return(
-        <form>
+        <form className="list-container">
+            <h1>Shiping Form</h1>
             <input value={name} onChange={(e) =>handleChange(e,setName)}/>
             <p>What is my name?: {name}</p>
             <input value={quantity} type="number" min="0" onChange={(e) =>handleChange(e, setQuantity)}/>
@@ -25,11 +26,13 @@ const MyForm = () =>{
                 <option value="Giftcard">Giftcard</option>
             </select>
             <p>You've selected: {payment}</p>
-            <label htmlFor="pick-up">Pick-up </label>
-            <input type ="radio" id="pick-up" checked={shiping === "Pick-up"} value="Pick-up" onChange={(e) =>handleChange(e,setShiping)}/><br/>
-            <label htmlFor="delivery">Delivery </label>
-            <input type ="radio" id="delivery" checked={shiping === "Delivery"} value="Delivery" onChange={(e) =>handleChange(e,setShiping)}/>
-            <p>You chose: {shiping}</p>
+            <div className="radio-conatiner">
+                <label htmlFor="pick-up">Pick-up </label>
+                <input type ="radio" id="pick-up" checked={shiping === "Pick-up"} value="Pick-up" onChange={(e) =>handleChange(e,setShiping)}/><br/>
+                <label htmlFor="delivery">Delivery </label>
+                <input type ="radio" id="delivery" checked={shiping === "Delivery"} value="Delivery" onChange={(e) =>handleChange(e,setShiping)}/>
+                <p>You chose: {shiping}</p>
+            </div> 
         </form>
     );
 }

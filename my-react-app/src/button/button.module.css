@@ -56,6 +56,10 @@
     height: 100%;
 }
 
+.compContainer{
+    z-index: 1;
+}
+
 @keyframes animate {
     0% {
         opacity: 0;

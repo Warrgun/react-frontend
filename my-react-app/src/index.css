@@ -26,7 +26,8 @@ html{
   border-radius: 10px;
   box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.1);
   background-color: hsl(0, 0%, 20%);
-  max-width: 400px;
+  min-height: 400px;
+  max-width: 300px;
   text-align: center;
   margin: 10px;
   padding: 15px;
@@ -91,6 +92,85 @@ input[type="color"]{
   padding: 5px;
   border-radius: 10px;
   border: 3px solid hsl(0,0%,80%);
+}
+
+.list-container{
+  border: 3px solid var(--inputs-color);
+  padding: 20px;
+  background-color: var(--div-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container h1{
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 10%);
+  text-shadow: 0 0 2px black;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.list-container input, textarea, select{
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.list-container input:focus, textarea:focus, select:focus{
+  border-color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.list-container textarea{
+  resize: vertical;
+}
+
+.list-container button:focus, input:focus,textarea:focus, select:focus{
+  outline: none;
+}
+
+.list-container button{
+  padding: 2px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: var(--inputs-color);
+  color: #EFF1F3;
+  text-shadow: 0 0 1px #EFF1F3;
+  transition: background-color 100ms ease-in-out;
+}
+
+.list-container button:hover{
+  background-color: hsl(200, 33%, 30%);
+}
+
+.list-container ul{
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+.list-container ul li{
+  text-align: center;
+  margin: 2px;
+  padding: 0 2px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border: 2px solid var(--inputs-color);
+  color: #EFF1F3;
+  text-wrap: nowrap;
+}
+
+.list-container ul li:hover{
+  border-color: hsla(0, 97%, 59%, 0.507);
+  text-decoration: line-through;
+}
+
+.list-container p, label{
+  font-weight: bold;
+
 }
 
 
